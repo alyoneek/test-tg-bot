@@ -5,8 +5,9 @@ import Header from './components/Header/Header';
 import { useTelegram } from './hooks/useTelegram';
 
 function App() {
-  const { tg, onToggle } = useTelegram();
+  const { onToggle } = useTelegram();
 
+  const tg = window.Telegram.WebApp;
   useEffect(() => {
     tg.ready();
   }, []);
