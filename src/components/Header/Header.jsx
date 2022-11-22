@@ -4,12 +4,12 @@ import { useTelegram } from '../../hooks/useTelegram';
 import './Header.css';
 
 function Header() {
-  const { tg, onClose } = useTelegram();
+  const { user, onClose } = useTelegram();
 
   return (
     <div className={'header'}>
       <Button onClick={onClose}>Закрыть</Button>
-      <span className={'username'}>{tg.initDataUnsafe?.user?.username}</span>
+      <span className={'username'}>{user?.username}</span>
     </div>
   );
 }
