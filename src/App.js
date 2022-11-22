@@ -8,9 +8,9 @@ function App() {
   const { onToggle } = useTelegram();
 
   const tg = window.Telegram.WebApp;
-  useEffect(() => {
-    tg.ready();
-  }, []);
+  // useEffect(() => {
+  //   tg.ready();
+  // }, []);
 
   return (
     <div className="App">
